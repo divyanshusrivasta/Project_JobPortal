@@ -1,0 +1,360 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E74EA1F-FF6C-49E9-997D-6374F0D95B5A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_JobPortal_0507</RootNamespace>
+    <AssemblyName>Project_JobPortal_0507</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44353</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxControlToolkit.19.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin Module\AdminHome.aspx" />
+    <Content Include="Admin Module\AdminMangaeJob.aspx" />
+    <Content Include="Admin Module\Home.aspx" />
+    <Content Include="Admin Module\images\item-pointer-mover.gif" />
+    <Content Include="Admin Module\images\item-pointer.gif" />
+    <Content Include="Admin Module\images\lava.gif" />
+    <Content Include="Admin Module\images\lava.png" />
+    <Content Include="Admin Module\images\main-bg.png" />
+    <Content Include="Admin Module\images\main-delimiter.png" />
+    <Content Include="Admin Module\jquery.js" />
+    <Content Include="Admin Module\ManageJobRecruiter.aspx" />
+    <Content Include="Admin Module\ManageJobSeeker.aspx" />
+    <Content Include="Admin Module\menu.css" />
+    <Content Include="Admin Module\menu.js" />
+    <Content Include="Footer.ascx" />
+    <Content Include="Header.ascx" />
+    <Content Include="images\item-pointer-mover.gif" />
+    <Content Include="images\item-pointer.gif" />
+    <Content Include="images\lava.gif" />
+    <Content Include="images\lava.png" />
+    <Content Include="images\main-bg.png" />
+    <Content Include="images\main-delimiter.png" />
+    <Content Include="JobRecruiterModule\images\item-pointer-mover.gif" />
+    <Content Include="JobRecruiterModule\images\item-pointer.gif" />
+    <Content Include="JobRecruiterModule\images\lava.gif" />
+    <Content Include="JobRecruiterModule\images\lava.png" />
+    <Content Include="JobRecruiterModule\images\main-bg.png" />
+    <Content Include="JobRecruiterModule\images\main-delimiter.png" />
+    <Content Include="JobRecruiterModule\JobRecruiterHome.aspx" />
+    <Content Include="JobRecruiterModule\JobRecruiterJobPost.aspx" />
+    <Content Include="JobRecruiterModule\JobRecruiterManageJobSeeker.aspx" />
+    <Content Include="JobRecruiterModule\JobRecruiterRegistrationForm.aspx" />
+    <Content Include="JobRecruiterModule\jquery.js" />
+    <Content Include="JobRecruiterModule\ManageJobPost.aspx" />
+    <Content Include="JobRecruiterModule\menu.css" />
+    <Content Include="JobRecruiterModule\menu.js" />
+    <Content Include="JobRecruiterModule\recruiterbackground .png" />
+    <Content Include="JobRecruiterModule\JobRecruiterChangePassword.aspx" />
+    <Content Include="JobSeekerModule\images\item-pointer-mover.gif" />
+    <Content Include="JobSeekerModule\images\item-pointer.gif" />
+    <Content Include="JobSeekerModule\images\lava.gif" />
+    <Content Include="JobSeekerModule\images\lava.png" />
+    <Content Include="JobSeekerModule\images\main-bg.png" />
+    <Content Include="JobSeekerModule\images\main-delimiter.png" />
+    <Content Include="JobSeekerModule\JobSeekerChangePassword.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerForm.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerHome.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerJobShow.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerSendMail.aspx" />
+    <Content Include="JobSeekerModule\jquery.js" />
+    <Content Include="JobSeekerModule\menu.css" />
+    <Content Include="JobSeekerModule\menu.js" />
+    <Content Include="job-portal-banner.jpg" />
+    <Content Include="jquery.js" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="menu.css" />
+    <Content Include="menu.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Module\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Module\AdminMangaeJob.aspx.cs">
+      <DependentUpon>AdminMangaeJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\AdminMangaeJob.aspx.designer.cs">
+      <DependentUpon>AdminMangaeJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Module\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Module\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Module\ManageJobRecruiter.aspx.cs">
+      <DependentUpon>ManageJobRecruiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\ManageJobRecruiter.aspx.designer.cs">
+      <DependentUpon>ManageJobRecruiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Module\ManageJobSeeker.aspx.cs">
+      <DependentUpon>ManageJobSeeker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Module\ManageJobSeeker.aspx.designer.cs">
+      <DependentUpon>ManageJobSeeker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultMaster.Master.cs">
+      <DependentUpon>DefaultMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultMaster.Master.designer.cs">
+      <DependentUpon>DefaultMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterHome.aspx.cs">
+      <DependentUpon>JobRecruiterHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterHome.aspx.designer.cs">
+      <DependentUpon>JobRecruiterHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPost.aspx.cs">
+      <DependentUpon>JobRecruiterJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPost.aspx.designer.cs">
+      <DependentUpon>JobRecruiterJobPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterManageJobSeeker.aspx.cs">
+      <DependentUpon>JobRecruiterManageJobSeeker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterManageJobSeeker.aspx.designer.cs">
+      <DependentUpon>JobRecruiterManageJobSeeker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterMaster.Master.cs">
+      <DependentUpon>JobRecruiterMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterMaster.Master.designer.cs">
+      <DependentUpon>JobRecruiterMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterRegistrationForm.aspx.cs">
+      <DependentUpon>JobRecruiterRegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterRegistrationForm.aspx.designer.cs">
+      <DependentUpon>JobRecruiterRegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\ManageJobPost.aspx.cs">
+      <DependentUpon>ManageJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\ManageJobPost.aspx.designer.cs">
+      <DependentUpon>ManageJobPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterChangePassword.aspx.cs">
+      <DependentUpon>JobRecruiterChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterChangePassword.aspx.designer.cs">
+      <DependentUpon>JobRecruiterChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerChangePassword.aspx.cs">
+      <DependentUpon>JobSeekerChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerChangePassword.aspx.designer.cs">
+      <DependentUpon>JobSeekerChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerForm.aspx.cs">
+      <DependentUpon>JobSeekerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerForm.aspx.designer.cs">
+      <DependentUpon>JobSeekerForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerHome.aspx.cs">
+      <DependentUpon>JobSeekerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerHome.aspx.designer.cs">
+      <DependentUpon>JobSeekerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerJobShow.aspx.cs">
+      <DependentUpon>JobSeekerJobShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerJobShow.aspx.designer.cs">
+      <DependentUpon>JobSeekerJobShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerMaster.Master.cs">
+      <DependentUpon>JobSeekerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerMaster.Master.designer.cs">
+      <DependentUpon>JobSeekerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerSendMail.aspx.cs">
+      <DependentUpon>JobSeekerSendMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerSendMail.aspx.designer.cs">
+      <DependentUpon>JobSeekerSendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultMaster.Master" />
+    <Content Include="JobRecruiterModule\JobRecruiterMaster.Master" />
+    <Content Include="JobSeekerModule\JobSeekerMaster.Master" />
+    <Content Include="Admin Module\AdminMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JobRecruiterModule\JobRecruiterImage\" />
+    <Folder Include="JobSeekerModule\JobSeekerImage\" />
+    <Folder Include="JobSeekerModule\JobSeekerResume\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56028</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44353/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

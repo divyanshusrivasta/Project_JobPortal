@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Project_JobPortal_0507.Admin_Module.AdminMaster" %>
+<%@ Register Src="~/Header.ascx" TagName="MyHead" TagPrefix="Asp" %>
+<%@ Register Src="~/Footer.ascx" TagName="MyFoot" TagPrefix="Asp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="jquery.js"></script>
+    <link href="menu.css" rel="stylesheet" />
+    <script src="menu.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+
+                <tr>
+                    <td>
+                        <Asp:MyHead id="h1" runat="server"></Asp:MyHead>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <div id="menu">
+		                 <ul class="menu">
+                           <li><a href="AdminHome.aspx" class="parent"><span>Home</span></a>
+                               <li><a href="AdminMangaeJob.aspx" class="parent"><span>Manage Job Post</span></a>
+		                	<li><a href="ManageJobRecruiter.aspx" class="parent"><span>Manage Job Recruiter</span></a>
+                                <li><a href="ManageJobSeeker.aspx" class="parent"><span>Manage Job Seeker</span></a>
+                                       <li><a href="../LogOut.aspx" class="parent"><span>Log Out</span></a>
+
+				
+		                 </ul>
+	                    </div>
+                     
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:1000px;height:450px;background-color:lightslategrey;vertical-align:top">
+                        <center>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </center>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Asp:MyFoot id="f1" runat="server"></Asp:MyFoot>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>
